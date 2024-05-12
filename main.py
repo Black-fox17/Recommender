@@ -1,7 +1,7 @@
 import pandas as pd
 import random
 
-with open(r"C:\Users\owner\Desktop\Projects\Movie recommender\full_movies.csv",'rb') as f:
+with open(r"full_movies.csv",'rb') as f:
     df = pd.read_csv(f)
 
 def title():
