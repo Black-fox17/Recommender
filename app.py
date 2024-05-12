@@ -4,7 +4,7 @@ import time
 import pandas as pd
 import random
 
-with open(r"full_movies.csv",'rb') as f:
+with open("full_movies.csv",'rb') as f:
     df = pd.read_csv(f)
 
 def title():
