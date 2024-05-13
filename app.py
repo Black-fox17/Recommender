@@ -79,14 +79,14 @@ def main():
     # Search box component
     search_input = st.text_input("Search for a Movie:", "")
     # Filtering suggestions based on user input
-    filtered_suggestions = filter_suggestions(search_input)
+    #filtered_suggestions = filter_suggestions(search_input)
     
     main_placeholder = st.empty()
     # Displaying filtered suggestions
-    if filtered_suggestions:
-        st.write("Suggestions:")
-        for suggestion in filtered_suggestions:
-            st.write(suggestion)
+    # if filtered_suggestions:
+    #     st.write("Suggestions:")
+    #     for suggestion in filtered_suggestions:
+    #         st.write(suggestion)
     search_button = st.button("Search")
     if search_button:
         try:
