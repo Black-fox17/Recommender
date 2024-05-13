@@ -4,7 +4,11 @@ import time
 import pandas as pd
 import random
 def main():
+<<<<<<< HEAD
     with open(r"C:\Users\owner\Desktop\Projects\Movie recommender\deploy\full_movies.csv",'rb') as f:
+=======
+    with open("full_movies.csv",'rb') as f:
+>>>>>>> b257b89b786ccd24f8591ca5c77abc0ff6de6ded
         df = pd.read_csv(f)
     
     def title():
@@ -21,6 +25,11 @@ def main():
     #Construct the required TF-IDF matrix by fitting and transforming the data
     tfidf_matrix = tfidf.fit_transform(df['overview'])
     
+<<<<<<< HEAD
+=======
+    #Output the shape of tfidf_matrix
+    tfidf_matrix.shape
+>>>>>>> b257b89b786ccd24f8591ca5c77abc0ff6de6ded
     from sklearn.metrics.pairwise import linear_kernel
     
     # Compute the cosine similarity matrix
@@ -100,4 +109,8 @@ def main():
             st.warning("Sorry we do not have data based on your provided information\nPlease Try again with another Movie.")
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     main()
+=======
+    main()
+>>>>>>> b257b89b786ccd24f8591ca5c77abc0ff6de6ded
